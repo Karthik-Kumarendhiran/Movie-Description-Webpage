@@ -1,0 +1,39 @@
+<html>
+<body>
+<style>
+body{
+   
+background-image: url('mbg.png'),url(mvw.jpg);
+background-size: 1000px 750px,550px 290px;
+background-position:left,bottom right;
+background-repeat: no-repeat,no-repeat;
+}
+table{
+ background: linear-gradient(to right, #0066ff 0%, #cc66ff 100%);
+width: 33%;
+height: 50%;
+margin: -20px 35px 20px 10px;
+}
+
+}
+</style>
+<form name="forgotp" onsubmit="return validate()" method="post">
+<table align="right" border-radius:20px  bordercolor="white" cellpadding=10 cellspacing=20>
+<h1 align="right" style="color:purple;margin: 10px 120px 20px 10px;">Forgot Password</h1>
+<tr style="font-size:25;color:white" align="center"><td>Email  <input type="email" name="mail" required placeholder="Enter your email"></tr></td><br>
+<tr align="center"><td><a href="Movieloginpage.html"><button type=submit value="submit">Submit</tr></td></a>
+</body>
+</form>
+</html>
+<script>
+function validate()
+{
+var email=document.forms["forgotp"]["mail"];
+
+if(email.value==""){
+window.alert("Please enter your email");
+email.focus();
+return false;
+}
+}
+</script>
